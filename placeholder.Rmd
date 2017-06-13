@@ -1,0 +1,14 @@
+---
+title: "CHDWB Database - External Codebook - Placeholder"
+author: "Melinda K. Higgins, PhD."
+date: "June 13, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown - placeholder page
+
+This is a placeholder webpage for CHDWB Database External Codebook
