@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="pubs.html">
 
-<link rel="next" href="personal.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -210,34 +210,174 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">CHDWB Codebook</h1>
-<h4 class="author"><em>Melinda Higgins, Ph.D</em></h4>
-<h4 class="date"><em>2017-10-10</em></h4>
+<div id="refs" class="section level1">
+<h1><span class="header-section-number">Chapter 28</span> Final Processing Notes</h1>
+<div id="r-packages-used" class="section level2">
+<h2><span class="header-section-number">28.1</span> R Packages Used</h2>
+<p>The analyses presented above and this report were completed using <code>R</code> <span class="citation">(R Core Team <a href="#ref-R_Core_Team_2017">2017</a>)</span> with the following packages:</p>
+<ul>
+<li><code>haven</code> <span class="citation">(Wickham and Miller <a href="#ref-Wickham_2017">2017</a>)</span></li>
+<li><code>dplyr</code> <span class="citation">(? <a href="#ref-Wickham_2017a">2017</a>)</span></li>
+<li><code>tidyr</code> <span class="citation">(Wickham and Henry <a href="#ref-Wickham_2017ab">2017</a>)</span></li>
+<li><code>psych</code> <span class="citation">(Revelle <a href="#ref-Revelle_2017">2017</a>)</span></li>
+<li><code>knitr</code> <span class="citation">(Xie <a href="#ref-Xie_2017">2017</a><a href="#ref-Xie_2017">a</a>; Xie <a href="#ref-Xie_2015">2015</a>; Xie <a href="#ref-Xie_2014">2014</a>)</span></li>
+<li><code>knitcitations</code> <span class="citation">(Boettiger <a href="#ref-Boettiger_2017">2017</a>)</span></li>
+<li><code>printr</code> <span class="citation">(Xie <a href="#ref-Xie_2017a">2017</a><a href="#ref-Xie_2017a">b</a>)</span></li>
+<li><code>likert</code> <span class="citation">(Bryer and Speerschneider <a href="#ref-Bryer_2016">2016</a>)</span></li>
+</ul>
 </div>
-<div id="the-center-for-heath-discovery-and-well-being-chdwb" class="section level1 unnumbered">
-<h1>The Center for Heath Discovery and Well-Being (CHDWB)</h1>
-<p><em><strong>NOTE: This is the External Version </strong></em></p>
-<p>The <a href="http://predictivehealth.emory.edu/index.html">Emory/Georgia Tech Predictive Health Institute (PHI)</a>, through its <a href="http://predictivehealth.emory.edu/chd/index.html">Center for Health Discovery and Well Being (CHDWB)</a>, is a component of the <a href="http://www.actsi.org/">Atlanta Clinical Translational Science Institute</a>, a collaborative effort of Emory University, Morehouse School of Medicine, and Georgia Institute of Technology (Georgia Tech). The Predictive Health Institute was established as part of the Emory University strategic plan in 2005 as an innovative approach to understanding and optimizing health that focuses on maintaining health rather than treating disease. The CHDWB was established as the clinical expression of Predictive Health, with the purpose of integrating PHI principles with scientific discovery, health focused research and education using a combination of established and cutting edge tools to identify and measure risks and deviations from health. The CHDWB serves as a practical test of the concept of health-focused care, as well as an academic resource and a clinical-translational laboratory with its innovative delivery model and longitudinal database and tissue repository.</p>
-<p>Two core CHDWB goals have been to describe health in social, cultural and biological terms, and to use these tools to understand and predict deviations from health and overall health prognosis. A variety of metrics are used in this process, including a battery of questionnaires, assessments and laboratory tests that are either disease specific (e.g. cancer, neurodegenerative diseases, and atherosclerosis) or follow common pathways such as oxidative stress, inflammation, and immune status.</p>
-<p>The CHDWB established a prospective longitudinal cohort of approximately 750 individuals who were enrolled as early as 2006 and have undergone annual assessments as participation permitted and excepting attrition. Participants from the Emory University pool of employees were randomly offered to join the CHDWB cohort. Those who agreed to participate and who provided informed consent were predominantly heathy individuals.</p>
-<p>As the scientific arm of the Predictive Health Institute, two core CHDWB goals have been to describe health in social, cultural and biological terms, and to use these tools to understand and predict deviations from health and overall health prognosis. The CHDWB serves as a practical test of the concept of health-focused care, as well as an academic resource and a clinical-translational laboratory with its innovative delivery model and longitudinal database and tissue repository. A variety of metrics are used in this process, including a battery of questionnaires, assessments and laboratory tests that are either disease specific (e.g. cancer, neurodegenerative diseases, and atherosclerosis) or follow common pathways such as oxidative stress, inflammation, and immune status. Examples of data elements collected from participants each year are personal and family health history, occupational history and exposures, tobacco and alcohol use, traditional medical and complementary medication use, detailed food intake, measures of stress, anxiety, depression, spirituality, validated metrics of physical functioning, social support, sleepiness and sleep quality. Participants also undergo traditional medical testing including treadmill testing, body composition and bone density testing, measures of cardiovascular function and risk, and traditional laboratory testing such as blood chemistry and hormone profiles. Innovative and cutting edge laboratory testing is also performed for regenerative cell potential, oxidative stress and inflammation, genetic and genomic analyses and large-scale metabolomics.</p>
-<div id="this-codebook" class="section level2">
-<h2><span class="header-section-number">0.1</span> This Codebook</h2>
-<p>The rest of this “book” provides the documentation, codebook definitions, descriptions of each questionnaire, instrument, clinical measurement and lab results from each time point <em>(internal version)</em>. This documentation also includes suggested analysis approaches and interpretation of the data contained herein <em>(internal version)</em>.</p>
+<div id="r-session-info-as-of-2017-10-10-123750" class="section level2">
+<h2><span class="header-section-number">28.2</span> R Session Info as of 2017-10-10 12:37:50</h2>
+<pre><code>## R version 3.4.1 (2017-06-30)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 10 x64 (build 14393)
+## 
+## Matrix products: default
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.1252 
+## [2] LC_CTYPE=English_United States.1252   
+## [3] LC_MONETARY=English_United States.1252
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.1252    
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+##  [1] likert_1.3.5        xtable_1.8-2        ggplot2_2.2.1      
+##  [4] printr_0.1          knitcitations_1.0.8 knitr_1.17         
+##  [7] psych_1.7.8         tidyr_0.7.1         dplyr_0.7.3        
+## [10] haven_1.1.0        
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_0.12.12       compiler_3.4.1     plyr_1.8.4        
+##  [4] bindr_0.1          forcats_0.2.0      tools_3.4.1       
+##  [7] digest_0.6.12      gtable_0.2.0       jsonlite_1.5      
+## [10] lubridate_1.6.0    evaluate_0.10.1    tibble_1.3.4      
+## [13] nlme_3.1-131       lattice_0.20-35    pkgconfig_2.0.1   
+## [16] rlang_0.1.2        bibtex_0.4.2       rstudioapi_0.7    
+## [19] curl_2.8.1         yaml_2.1.14        parallel_3.4.1    
+## [22] bindrcpp_0.2       gridExtra_2.3      xml2_1.1.1        
+## [25] RefManageR_0.14.20 stringr_1.2.0      httr_1.3.1        
+## [28] rprojroot_1.2      grid_3.4.1         glue_1.1.1        
+## [31] R6_2.2.2           foreign_0.8-69     rmarkdown_1.6     
+## [34] bookdown_0.5       reshape2_1.4.2     purrr_0.2.3       
+## [37] magrittr_1.5       scales_0.5.0       backports_1.1.0   
+## [40] htmltools_0.3.6    assertthat_0.2.0   mnormt_1.5-5      
+## [43] colorspace_1.3-2   stringi_1.1.5      lazyeval_0.2.0    
+## [46] munsell_0.4.3</code></pre>
 
+<div id="refs" class="references">
+<div>
+<p>? 2017. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a>.</p>
+</div>
+<div>
+<p>Akister, Jane, and Joan Stevenson-Hinde. 1991. “Identifying Families at Risk: Exploring the Potential of the McMaster Family Assessment Device.” <em>Journal of Family Therapy</em> 13 (4). Wiley-Blackwell: 411–21. doi:<a href="https://doi.org/10.1046/j..1991.00437.x">10.1046/j..1991.00437.x</a>.</p>
+</div>
+<div>
+<p>BECK, A. T. 1961. “An Inventory for Measuring Depression.” <em>Archives of General Psychiatry</em> 4 (6). American Medical Association (AMA): 561. doi:<a href="https://doi.org/10.1001/archpsyc.1961.01710120031004">10.1001/archpsyc.1961.01710120031004</a>.</p>
+</div>
+<div>
+<p>Beck, Aaron T., Robert A. Steer, Roberta Ball, and William F. Ranieri. 1996. “Comparison of Beck Depression Inventories-IA and-II in Psychiatric Outpatients.” <em>Journal of Personality Assessment</em> 67 (3). Informa UK Limited: 588–97. doi:<a href="https://doi.org/10.1207/s15327752jpa6703_13">10.1207/s15327752jpa6703_13</a>.</p>
+</div>
+<div>
+<p>Bihum, Joan T., Marianne Z. Wamboldt, Lesile A. Gavin, and Frederick S. Wamboldt. 2002. “Can the Family Assessment Device (FAD) Be Used with School Aged Children?” <em>Family Process</em> 41 (4). Wiley-Blackwell: 723–31. doi:<a href="https://doi.org/10.1111/j.1545-5300.2002.00723.x">10.1111/j.1545-5300.2002.00723.x</a>.</p>
+</div>
+<div>
+<p>Boettiger, Carl. 2017. <em>Knitcitations: Citations for ’Knitr’ Markdown Files</em>. <a href="https://CRAN.R-project.org/package=knitcitations" class="uri">https://CRAN.R-project.org/package=knitcitations</a>.</p>
+</div>
+<div>
+<p>Bryer, Jason, and Kimberly Speerschneider. 2016. <em>Likert: Analysis and Visualization Likert Items</em>. <a href="https://CRAN.R-project.org/package=likert" class="uri">https://CRAN.R-project.org/package=likert</a>.</p>
+</div>
+<div>
+<p>Buysse, Daniel J., Charles F. Reynolds, Timothy H. Monk, Susan R. Berman, and David J. Kupfer. 1989. “The Pittsburgh Sleep Quality Index: A New Instrument for Psychiatric Practice and Research.” <em>Psychiatry Research</em> 28 (2). Elsevier BV: 193–213. doi:<a href="https://doi.org/10.1016/0165-1781(89)90047-4">10.1016/0165-1781(89)90047-4</a>.</p>
+</div>
+<div>
+<p>Corbi‘ere, Marc, Arielle Bonneville-Roussy, Ren’ee-Louise Franche, Marie-France Coutu, Manon Choini‘ere, Marie-Jos’e Durand, and Aline Boulanger. 2011. “Further Validation of the BDI-II Among People with Chronic Pain Originating from Musculoskeletal Disorders.” <em>The Clinical Journal of Pain</em> 27 (1). Ovid Technologies (Wolters Kluwer Health): 62–69. doi:<a href="https://doi.org/10.1097/ajp.0b013e3181eef903">10.1097/ajp.0b013e3181eef903</a>.</p>
+</div>
+<div>
+<p>CROFT, JANET B., NORA L. KEENAN, DAVID P. SHERIDAN, FRANCES C. WHEELER, and MARJORIE A. SPEERS. 1995. “Waist-to-Hip Ratio in a Biracial Population.” <em>Journal of the American Dietetic Association</em> 95 (1). Elsevier BV: 60–64. doi:<a href="https://doi.org/10.1016/s0002-8223(95)00014-3">10.1016/s0002-8223(95)00014-3</a>.</p>
+</div>
+<div>
+<p>Keyes, Corey L. M. 2002. “The Mental Health Continuum: From Languishing to Flourishing in Life.” <em>Journal of Health and Social Behavior</em> 43 (2). SAGE Publications: 207. doi:<a href="https://doi.org/10.2307/3090197">10.2307/3090197</a>.</p>
+</div>
+<div>
+<p>Mitchell, Pamela H., Lynda Powell, James Blumenthal, Jennifer Norten, Gail Ironson, Carol Rogers Pitula, Erika Sivarajan Froelicher, et al. 2003. “A Short Social Support Measure for Patients Recovering from Myocardial Infarction.” <em>Journal of Cardiopulmonary Rehabilitation</em> 23 (6). Ovid Technologies (Wolters Kluwer Health): 398–403. doi:<a href="https://doi.org/10.1097/00008483-200311000-00001">10.1097/00008483-200311000-00001</a>.</p>
+</div>
+<div>
+<p>R Core Team. 2017. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+</div>
+<div>
+<p>Revelle, William. 2017. <em>Psych: Procedures for Psychological, Psychometric, and Personality Research</em>. Evanston, Illinois: Northwestern University. <a href="https://CRAN.R-project.org/package=psych" class="uri">https://CRAN.R-project.org/package=psych</a>.</p>
+</div>
+<div>
+<p>Ross, R., T. Berentzen, A. J. Bradshaw, I. Janssen, H. S. Kahn, P. T. Katzmarzyk, J. L. Kuk, et al. 2008. “Does the Relationship Between Waist Circumference, Morbidity and Mortality Depend on Measurement Protocol for Waist Circumference?” <em>Obesity Reviews</em> 9 (4). Wiley-Blackwell: 312–25. doi:<a href="https://doi.org/10.1111/j.1467-789x.2007.00411.x">10.1111/j.1467-789x.2007.00411.x</a>.</p>
+</div>
+<div>
+<p>Wickham, Hadley, and Lionel Henry. 2017. <em>Tidyr: Easily Tidy Data with ’Spread()’ and ’Gather()’ Functions</em>. <a href="https://CRAN.R-project.org/package=tidyr" class="uri">https://CRAN.R-project.org/package=tidyr</a>.</p>
+</div>
+<div>
+<p>Wickham, Hadley, and Evan Miller. 2017. <em>Haven: Import and Export ’Spss’, ’Stata’ and ’Sas’ Files</em>. <a href="https://CRAN.R-project.org/package=haven" class="uri">https://CRAN.R-project.org/package=haven</a>.</p>
+</div>
+<div>
+<p>Xie, Yihui. 2014. “Knitr: A Comprehensive Tool for Reproducible Research in R.” In <em>Implementing Reproducible Computational Research</em>, edited by Victoria Stodden, Friedrich Leisch, and Roger D. Peng. Chapman; Hall/CRC. <a href="http://www.crcpress.com/product/isbn/9781466561595" class="uri">http://www.crcpress.com/product/isbn/9781466561595</a>.</p>
+</div>
+<div>
+<p>———. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://yihui.name/knitr/" class="uri">https://yihui.name/knitr/</a>.</p>
+</div>
+<div>
+<p>———. 2017a. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in R</em>. <a href="https://yihui.name/knitr/" class="uri">https://yihui.name/knitr/</a>.</p>
+</div>
+<div>
+<p>———. 2017b. <em>Printr: Automatically Print R Objects to Appropriate Formats According to the ’Knitr’ Output Format</em>. <a href="https://CRAN.R-project.org/package=printr" class="uri">https://CRAN.R-project.org/package=printr</a>.</p>
 </div>
 </div>
-
-
-
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-R_Core_Team_2017">
+<p>R Core Team. 2017. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/" class="uri">https://www.R-project.org/</a>.</p>
+</div>
+<div id="ref-Wickham_2017">
+<p>Wickham, Hadley, and Evan Miller. 2017. <em>Haven: Import and Export ’Spss’, ’Stata’ and ’Sas’ Files</em>. <a href="https://CRAN.R-project.org/package=haven" class="uri">https://CRAN.R-project.org/package=haven</a>.</p>
+</div>
+<div id="ref-Wickham_2017a">
+<p>? 2017. <em>Dplyr: A Grammar of Data Manipulation</em>. <a href="https://CRAN.R-project.org/package=dplyr" class="uri">https://CRAN.R-project.org/package=dplyr</a>.</p>
+</div>
+<div id="ref-Wickham_2017ab">
+<p>Wickham, Hadley, and Lionel Henry. 2017. <em>Tidyr: Easily Tidy Data with ’Spread()’ and ’Gather()’ Functions</em>. <a href="https://CRAN.R-project.org/package=tidyr" class="uri">https://CRAN.R-project.org/package=tidyr</a>.</p>
+</div>
+<div id="ref-Revelle_2017">
+<p>Revelle, William. 2017. <em>Psych: Procedures for Psychological, Psychometric, and Personality Research</em>. Evanston, Illinois: Northwestern University. <a href="https://CRAN.R-project.org/package=psych" class="uri">https://CRAN.R-project.org/package=psych</a>.</p>
+</div>
+<div id="ref-Xie_2017">
+<p>Xie, Yihui. 2017a. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in R</em>. <a href="https://yihui.name/knitr/" class="uri">https://yihui.name/knitr/</a>.</p>
+</div>
+<div id="ref-Xie_2015">
+<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="https://yihui.name/knitr/" class="uri">https://yihui.name/knitr/</a>.</p>
+</div>
+<div id="ref-Xie_2014">
+<p>Xie, Yihui. 2014. “Knitr: A Comprehensive Tool for Reproducible Research in R.” In <em>Implementing Reproducible Computational Research</em>, edited by Victoria Stodden, Friedrich Leisch, and Roger D. Peng. Chapman; Hall/CRC. <a href="http://www.crcpress.com/product/isbn/9781466561595" class="uri">http://www.crcpress.com/product/isbn/9781466561595</a>.</p>
+</div>
+<div id="ref-Boettiger_2017">
+<p>Boettiger, Carl. 2017. <em>Knitcitations: Citations for ’Knitr’ Markdown Files</em>. <a href="https://CRAN.R-project.org/package=knitcitations" class="uri">https://CRAN.R-project.org/package=knitcitations</a>.</p>
+</div>
+<div id="ref-Xie_2017a">
+<p>Xie, Yihui. 2017b. <em>Printr: Automatically Print R Objects to Appropriate Formats According to the ’Knitr’ Output Format</em>. <a href="https://CRAN.R-project.org/package=printr" class="uri">https://CRAN.R-project.org/package=printr</a>.</p>
+</div>
+<div id="ref-Bryer_2016">
+<p>Bryer, Jason, and Kimberly Speerschneider. 2016. <em>Likert: Analysis and Visualization Likert Items</em>. <a href="https://CRAN.R-project.org/package=likert" class="uri">https://CRAN.R-project.org/package=likert</a>.</p>
+</div>
+</div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="pubs.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="personal.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
